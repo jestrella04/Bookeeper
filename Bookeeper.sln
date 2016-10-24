@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bookeeper.Droid", "MiPrimerXamarinUapa\MiPrimerXamarinUapa.Droid\Bookeeper.Droid.csproj", "{BFB68405-869E-4A7F-AC91-78048B6275E6}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bookeeper.Droid", "Bookeeper\Bookeeper.Droid\Bookeeper.Droid.csproj", "{BFB68405-869E-4A7F-AC91-78048B6275E6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bookeeper", "MiPrimerXamarinUapa\MiPrimerXamarinUapa\Bookeeper.csproj", "{43C7A209-82C5-4FD8-A353-795832DA3B4C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bookeeper", "Bookeeper\Bookeeper\Bookeeper.csproj", "{43C7A209-82C5-4FD8-A353-795832DA3B4C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
