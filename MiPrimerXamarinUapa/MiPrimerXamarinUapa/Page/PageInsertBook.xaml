@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Bookeeper.Page.PageInsertBook"
+             Padding="20"
+             Title="Agregar Libro">
+  <ScrollView>
+    <StackLayout>
+      <Label Text="Título" VerticalOptions="Center" HorizontalOptions="FillAndExpand"></Label>
+      <Entry Placeholder="Introduzca el título" Text="{Binding BookTitle}" VerticalOptions="Center" HorizontalOptions="FillAndExpand"></Entry>
+      
+      <Label Text="Autor" VerticalOptions="Center" HorizontalOptions="FillAndExpand"></Label>
+      <Entry Placeholder="Introduzca el autor" Text="{Binding BookAuthor}" VerticalOptions="Center" HorizontalOptions="FillAndExpand"></Entry>
+      
+      <Label Text="Estado (0 = Pendiente, 1 = Leído)" VerticalOptions="Center" HorizontalOptions="FillAndExpand"></Label>
+      <Entry Placeholder="Introduzca el estado" Text="{Binding BookStatus}" VerticalOptions="Center" HorizontalOptions="FillAndExpand"></Entry>
+      
+      <Button x:Name="btnSave" Text="Guardar" Command="{Binding InsertBook}"></Button>
+      <Button x:Name="btnClear" Text="Limpiar" Command="{Binding ClearBook}"></Button>
+    </StackLayout>
+  </ScrollView>
+</ContentPage>

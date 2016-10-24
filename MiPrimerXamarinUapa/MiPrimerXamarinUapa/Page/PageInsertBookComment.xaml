@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Bookeeper.Page.PageInsertBookComment"
+             Padding="20"
+             Title="Agregar Comentario">
+
+  <ScrollView>
+    <StackLayout>
+      <StackLayout.BindingContext>
+        <vm.ViewModelBookComment></vm.ViewModelBookComment>
+      </StackLayout.BindingContext>
+      
+      <Label Text="Comentario" VerticalOptions="Center" HorizontalOptions="FillAndExpand"></Label>
+      <Editor Text="{Binding BookComment}" VerticalOptions="Center" HorizontalOptions="FillAndExpand"></Editor>
+
+      <Button x:Name="btnSave" Text="Guardar" Command="{Binding InsertBookComment}"></Button>
+      <Button x:Name="btnClear" Text="Limpiar" Command="{Binding ClearBookComment}"></Button>
+    </StackLayout>
+  </ScrollView>      
+</ContentPage>

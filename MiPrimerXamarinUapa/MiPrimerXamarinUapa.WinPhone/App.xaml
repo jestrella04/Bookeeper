@@ -1,0 +1,7 @@
+﻿<Application
+    x:Class="MiPrimerXamarinUapa.WinPhone.App"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:MiPrimerXamarinUapa.WinPhone">
+
+</Application>

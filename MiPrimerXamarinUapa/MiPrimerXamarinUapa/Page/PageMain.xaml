@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Name="Bookeeper"
+             x:Class="Bookeeper.Page.PageMain"
+             Padding="20"
+             Title="Bookeeper">
+  <ScrollView>
+    <StackLayout>
+      <Button Clicked="ClickInsertBook" Text="Insertar"></Button>
+      <Button Clicked="ClickReadBooks" Text="Leídos"></Button>
+      <Button Clicked="ClickPendingBooks" Text="Pendientes"></Button>
+    </StackLayout>
+  </ScrollView>
+</ContentPage>

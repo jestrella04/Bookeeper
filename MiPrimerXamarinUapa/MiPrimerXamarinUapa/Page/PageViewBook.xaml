@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Bookeeper.Page.PageViewBook"
+             Padding="20"
+             Title="Ver Libro">
+  
+  <ScrollView>
+    <StackLayout>
+      <Label Text="Detalles" Style="{StaticResource TitleLabel}"></Label>
+      <Label Text="{Binding BookTitle, StringFormat='Título: {0}'}"></Label>
+      <Label Text="{Binding BookAuthor, StringFormat='Autor: {0}'}"></Label>
+      <Label Text="{Binding BookStatus, StringFormat='Estado: {0}'}"></Label>
+      
+      <Label Text="Comentarios" Style="{StaticResource TitleLabel}"></Label>
+    </StackLayout>
+  </ScrollView>
+</ContentPage>

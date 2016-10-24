@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Application xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Bookeeper.App">
+  <Application.Resources>
+    <ResourceDictionary>
+      <!-- Color principal -->
+      <Color x:Key="MainColor">#0288d1</Color>
+
+      <!-- Labels -->
+      <Style x:Key="TitleLabel" TargetType="Label">
+        <Setter Property="TextColor" Value="{StaticResource MainColor}"></Setter>
+        <Setter Property="FontSize" Value="Large"></Setter>
+        <Setter Property="FontAttributes" Value="Bold"></Setter>
+      </Style>
+
+      <!-- Botones -->
+      <Style TargetType="Button">
+        <Setter Property="TextColor" Value="#ffffff"></Setter>
+        <Setter Property="BackgroundColor" Value="{StaticResource MainColor}"></Setter>
+      </Style>
+
+      <!-- Plantilla de lista de libros -->
+      <DataTemplate x:Key="BookListTemplate">
+        <ViewCell>
+          <Grid>
+            <Grid.ColumnDefinitions>
+              <ColumnDefinition Width="Auto"></ColumnDefinition>
+              <ColumnDefinition Width="*"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            
+            <Image Source="icon.png"></Image>
+
+            <StackLayout Grid.Column="1" Padding="10">
+              <Label Text="{Binding BookTitle, StringFormat='Título: {0}'}"></Label>
+              <Label Text="{Binding BookAuthor, StringFormat='Autor: {0}'}"></Label>
+              <Label Text="{Binding BookStatus, StringFormat='Estado: {0}'}"></Label>
+            </StackLayout>
+          </Grid>
+        </ViewCell>
+      </DataTemplate>
+      
+    </ResourceDictionary>
+  </Application.Resources>
+</Application>
