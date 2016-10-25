@@ -125,7 +125,7 @@
     <None Include="Properties\AndroidManifest.xml" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\MiPrimerXamarinUapa\Bookeeper.csproj">
+    <ProjectReference Include="..\Bookeeper\Bookeeper.csproj">
       <Project>{43C7A209-82C5-4FD8-A353-795832DA3B4C}</Project>
       <Name>Bookeeper</Name>
     </ProjectReference>
